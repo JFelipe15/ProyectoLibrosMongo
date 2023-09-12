@@ -1,0 +1,19 @@
+{
+    "builds":[
+        {
+            "src":"./index.js",
+            "use":"@vercel/node"
+        }
+    ],
+
+    "routes":[
+        {
+            "src":"/apiLibros/libros",
+            "dest":"index.js"
+        }
+    ],
+
+    "env":{
+        "mongodburi": "mongodb+srv://jfm1594:sNDUvtPR2JXgimcx@cluster0.2xr9loq.mongodb.net/BaseDatosLibros"
+    }
+}
